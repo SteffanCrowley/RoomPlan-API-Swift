@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pk-tu-CeD">
-                                <rect key="frame" x="40" y="186" width="520" height="108.33333333333331"/>
+                                <rect key="frame" x="40" y="230" width="348" height="152.33333333333337"/>
                                 <string key="text">To scan your room, point your device at all the walls, windows, doors and furniture in your space until your scan is complete.
 
 You can see a preview of your scan at the bottom of the screen so you can make sure your scan is correct. </string>
@@ -25,12 +25,12 @@ You can see a preview of your scan at the bottom of the screen so you can make s
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RoomPlan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDs-He-YN5">
-                                <rect key="frame" x="219.66666666666669" y="130" width="160.66666666666669" height="41"/>
+                                <rect key="frame" x="133.66666666666669" y="174" width="160.66666666666669" height="41"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" role="primary" translatesAutoresizingMaskIntoConstraints="NO" id="r5J-Dx-sgl">
-                                <rect key="frame" x="200" y="517" width="200" height="50"/>
+                                <rect key="frame" x="114" y="809" width="200" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="QUA-Ca-Q71"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="sD5-cO-lCf"/>
@@ -73,7 +73,7 @@ You can see a preview of your scan at the bottom of the screen so you can make s
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" role="primary" translatesAutoresizingMaskIntoConstraints="NO" id="OzX-Pp-2Ee">
-                                <rect key="frame" x="225" y="501" width="150" height="50"/>
+                                <rect key="frame" x="139" y="793" width="150" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="210-sX-00Y"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="LXe-u0-xIL"/>
@@ -103,7 +103,7 @@ You can see a preview of your scan at the bottom of the screen so you can make s
                                 <action selector="cancelScanning:" destination="ocJ-nv-BaW" id="scQ-uG-jSd"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Finish" id="MQz-pc-UhC">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="MQz-pc-UhC">
                             <connections>
                                 <action selector="doneScanning:" destination="ocJ-nv-BaW" id="SwQ-w5-i51"/>
                             </connections>

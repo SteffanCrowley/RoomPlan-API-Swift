@@ -79,10 +79,13 @@ class RoomCaptureViewController: UIViewController, RoomCaptureViewDelegate, Room
         navigationController?.dismiss(animated: true)
     }
     
+    // Export the USDZ output by specifying the `.parametric` export option.
+    // Alternatively, `.mesh` exports a nonparametric file and `.all`
+    // exports both in a single USDZ.
     @IBAction func exportResults(_ sender: UIButton) {
         let destinationURL = FileManager.default.temporaryDirectory.appending(path: "Room.usdz")
         do {
-            try finalResults?.export(to: destinationURL)
+            try finalResults?.export(to: destinationURL, exportOptions: .parametric)
             
             let activityVC = UIActivityViewController(activityItems: [destinationURL], applicationActivities: nil)
             activityVC.modalPresentationStyle = .popover
@@ -100,7 +103,6 @@ class RoomCaptureViewController: UIViewController, RoomCaptureViewDelegate, Room
         UIView.animate(withDuration: 1.0, animations: {
             self.cancelButton?.tintColor = .white
             self.doneButton?.tintColor = .white
-            self.doneButton?.title = "Finish"
             self.exportButton?.alpha = 0.0
         }, completion: { complete in
             self.exportButton?.isHidden = true
@@ -112,7 +114,6 @@ class RoomCaptureViewController: UIViewController, RoomCaptureViewDelegate, Room
         UIView.animate(withDuration: 1.0) {
             self.cancelButton?.tintColor = .systemBlue
             self.doneButton?.tintColor = .systemBlue
-            self.doneButton?.title = "Done"
             self.exportButton?.alpha = 1.0
         }
     }
